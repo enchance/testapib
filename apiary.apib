@@ -1,54 +1,15 @@
 FORMAT: 1A
 HOST: https://polls.apiblueprint.org/
 
-
-<!-- include another.apib -->
-
-# Order Demo
+# enchance
 
 Polls is a simple API allowing consumers to view polls and vote in them.
-
-## Account Collection [/account]
-
-### Create Account [POST]
-
-This will create a new account.
-
-+ Request (application/json)
-
-        {
-            "email": "foo@email.com",
-            "password": "pass123"
-        }
-    
-+ Response 201 (application/json)
-
-        {
-            "success": true,
-        }
-
-    
-### Ban Account [GET]
-
-+ Request (application/json)
-
-    + Headers 
-    
-            Location: /account/2/ban
-        
-+ Response 200 (application/json)
-
-            {
-                "success": true
-            }
-
 
 ## Questions Collection [/questions]
 
 ### List All Questions [GET]
 
 + Response 200 (application/json)
-
         [
             {
                 "question": "Favourite programming language?",
