@@ -9,6 +9,44 @@ yo
 
 Polls is a simple API allowing consumers to view polls and vote in them.
 
+## Store Collection [/store]
+
+### Create [POST]
+
++ Request (application/json)
+
+        {
+            "name": "Name here"
+        }
+
++ Response 201 (application/json)
+
+        {
+            "success": true
+        }
+
+
+### Read post [GET]
+
++ Request (application/json)
+
+    + Headers
+
+            Location:/store/123
+
++ Response 200 (application/json)
+
+    {
+        "id": 123,
+        "name": "This is the name"
+    }
+
++ Response 404 (application/json)
+
+    null
+
+
+
 ## Questions Collection [/questions]
 
 ### List All Questions [GET]
