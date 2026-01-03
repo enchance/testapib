@@ -1,0 +1,28 @@
+FORMAT: 1A
+HOST: https://polls.apiblueprint.org/
+
+# Haha
+
+## Subsection [/subby]
+
+### Do this thing [GET]
+
+    + Request (application/json)
+
+            {
+                "email": "foo@email.com"
+            }
+
+
+    + Response 200 (application/json)
+
+            {
+                "success": true
+            }
+
+
+    + Response 400 (application/json)
+
+            {
+                "error": "Something went horribly wrong"
+            }
