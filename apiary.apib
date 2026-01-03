@@ -13,37 +13,31 @@ This will create a new account.
 
 + Request (application/json)
 
-    {
-        "email": "foo@email.com",
-        "password": "pass123"
-    }
+        {
+            "email": "foo@email.com",
+            "password": "pass123"
+        }
     
 + Response 201 (application/json)
 
-    {
-        "success": true,
-    }
+        {
+            "success": true,
+        }
 
     
-### Ban Account [POST]
+### Ban Account [GET]
 
 + Request (application/json)
 
     + Headers 
     
-        Location: /account/2/ban
+            Location: /account/2/ban
         
-    + Body
++ Response 200 (application/json)
 
-        {
-            "email": "foo@email.com"
-        }
-        
-+ Response (application/json)
-
-    {
-        "success": true
-    }
+            {
+                "success": true
+            }
 
 
 ## Questions Collection [/questions]
