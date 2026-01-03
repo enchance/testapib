@@ -5,7 +5,7 @@ HOST: https://polls.apiblueprint.org/
 
 Polls is a simple API allowing consumers to view polls and vote in them.
 
-## Account [/account]
+## Account Collection [/account]
 
 ### Create Account [POST]
 
@@ -25,6 +25,25 @@ This will create a new account.
     }
 
     
+### Ban Account [POST]
+
++ Request (application/json)
+
+    + Headers 
+    
+        Location: /account/2/ban
+        
+    + Body
+
+        {
+            "email": "foo@email.com"
+        }
+        
++ Response (application/json)
+
+    {
+        "success": true
+    }
 
 
 ## Questions Collection [/questions]
